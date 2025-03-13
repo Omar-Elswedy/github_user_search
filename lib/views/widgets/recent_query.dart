@@ -21,7 +21,7 @@ class RecentQuery extends StatelessWidget {
         title: Text(sharedkey),
         trailing: IconButton(
           padding: EdgeInsets.zero,
-          icon: const Icon(Icons.delete, color: Colors.blue),
+          icon: const Icon(Icons.close, color: Colors.blue),
           onPressed: () {
             Provider.of<UserProvider>(context, listen: false)
                 .deleteKeys(sharedkey);
